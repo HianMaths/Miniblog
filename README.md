@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Miniblog com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
-## Available Scripts
+<img src="imagem.png" alt="Exemplo imagem">
 
-In the project directory, you can run:
+> O projeto é um miniblog simples desenvolvido em React, permitindo que usuários publiquem e excluam postagens. As postagens podem incluir título, conteúdo e uma imagem opcional. A interface é limpa e funcional, com foco na facilidade de uso.
 
-### `npm start`
+### Ajustes e melhorias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [x] Entrega dos Components: Header e Banner
+- [ ] Entrega e estilização do Component: PostForm
+- [ ] Entrega e estilização do Component: PostList
+- [ ] Enterga e estilização do Component: PostItem
+- [ ] Ajustes de bugs e sintaxes incorretas do prejeto
+- [ ] Entrega final do projeto, totalmente funcional
 
-### `npm test`
+## 🤝 Colaboradores
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/HianMaths" title="link para o perfil do github">
+        <img src="https://avatars.githubusercontent.com/u/153470472?v=4" width="100px;" alt="Foto do Hian Matheus no GitHub"/><br>
+        <sub>
+          <b>Hian Matheus</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Yuque7" title="link para o perfil do github">
+        <img src="https://avatars.githubusercontent.com/u/103937617?v=4" width="100px;" alt="Foto do Yuri Queiroz no GitHub"/><br>
+        <sub>
+          <b>Yuri Queiroz</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ArthurSilva902" title="link para o perfil do github">
+        <img src="https://avatars.githubusercontent.com/u/180798363?v=4" width="100px;" alt="Foto do Athur Silvino"/><br>
+        <sub>
+          <b>Arthur Silvino</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
