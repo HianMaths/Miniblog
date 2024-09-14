@@ -8,7 +8,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
 
 - [x] Entrega dos Components: Header e Banner
-- [ ] Entrega e estilização do Component: PostForm
+- [x] Entrega e estilização do Component: PostForm
 - [ ] Entrega e estilização do Component: PostList
 - [ ] Enterga e estilização do Component: PostItem
 - [ ] Ajustes de bugs e sintaxes incorretas do prejeto
