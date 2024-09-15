@@ -7,17 +7,17 @@ export function PostForm() {
   const [imageUrl, setImageUrl] = useState("");
   const [post, setPost] = useState([]);
 
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const onSubmit = (event) => {
+    event.preventDefault();
 
-    const addPost = {
+    const newPost = {
       id: Date.now(),
       title,
       description,
       imageUrl: imageUrl || "", //mostra uma imagem padrão caso não tenha uma
     };
 
-    setPost([...post, addPost]);
+    setPost([...post, newPost]);
 
     setTitle("");
     setDescription("");
@@ -34,23 +34,34 @@ export function PostForm() {
             type="text"
             placeholder="Título"
             value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(event) => setTitle(event.target.value)}
             maxLength={50}
           />
           <textarea
             placeholder="Conteúdo"
             value={description}
-            onChange={(e) => setDescription(e.target.value)}
+            onChange={(event) => setDescription(event.target.value)}
           />
           <input
             type="text"
             placeholder="Link da imagem (opcional)"
             value={imageUrl}
-            onChange={(e) => setImageUrl(e.target.value)}
+            onChange={(event) => setImageUrl(event.target.value)}
           />
           <Btn type="submit">Postar</Btn>
         </FormContent>
       </form>
+      <div>
+        {post.map((item) => {
+          return (
+            <div>
+              <img src={item.imageUrl} alt="" />
+              <p>Título: {item.title}</p>
+              <p>Descrição: {item.description}</p>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
