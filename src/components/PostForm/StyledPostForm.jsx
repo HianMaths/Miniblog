@@ -3,17 +3,19 @@ import styled from "styled-components";
 export const FormContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
   gap: 15px;
+  margin: 0 50px;
   margin-top: 20px;
 
-  input, textarea {
-    width: 90%;
+  input,
+  textarea {
+    width: 100%;
     padding: 10px;
     border: 2px solid #bfbaba;
     border-radius: 5px;
     font-size: 1rem;
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
   }
 
   textarea {
@@ -27,7 +29,7 @@ export const Btn = styled.button`
   color: white;
   padding: 10px 20px;
   margin-top: 10px;
-  margin-left: 80px;
+  margin-right: auto;
   border: none;
   border-radius: 5px;
   font-size: 1rem;

@@ -48,8 +48,8 @@ export function PostForm() {
             value={imageUrl}
             onChange={(e) => setImageUrl(e.target.value)}
           />
+          <Btn type="submit">Postar</Btn>
         </FormContent>
-        <Btn type="submit">Postar</Btn>
       </form>
     </>
   );
