@@ -12,7 +12,7 @@ export function Banner(props) {
   );
 }
 
-// Moda antiga, jeito torto de fazer
+// Moda antiga
 // export class Banner extends React.Component {
 //   render() {
 //     const { imageUrl } = this.props;
