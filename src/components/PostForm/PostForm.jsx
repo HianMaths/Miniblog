@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FormContent, Btn } from "./StyledPostForm";
+import { PostList } from "../PostList/PostList";
 
 export function PostForm() {
   const [title, setTitle] = useState("");
@@ -22,14 +23,6 @@ export function PostForm() {
     setTitle("");
     setDescription("");
     setImageUrl("");
-
-    console.log(addPost);
-  };
-
-  // Adicionando uma função para deletar post pelo ID
-  const deletePost = (id) => {
-    const updatePost = post.filter((item) => item.id !== id);
-    setPost(updatePost);
   };
 
   return (
@@ -38,13 +31,14 @@ export function PostForm() {
         <FormContent>
           <input
             type="text"
-            placeholder="Título"
+            placeholder="Título da postagem (máximo de 50 caracteres)"
             value={title}
             onChange={(event) => setTitle(event.target.value)}
             maxLength={50}
+            required
           />
           <textarea
-            placeholder="Conteúdo"
+            placeholder="Escreva o conteúdo aqui...."
             value={description}
             onChange={(event) => setDescription(event.target.value)}
           />
@@ -56,26 +50,9 @@ export function PostForm() {
           />
           <Btn type="submit">Postar</Btn>
         </FormContent>
-      </form>
-      <div>
-        {post.map((item) => {
-          return (
-            <div>
-              <img
-                src={item.imageUrl}
-                alt={item.tittle}
-                // Adicionando uma imagem caso nao haja link
-                style={{ width: "150px", height: "150px", objectFit: "cover" }}
-              />
-              <p>Título: {item.title}</p>
-              <p>Descrição: {item.description}</p>
-              <Btn type="button" onClick={() => deletePost(item.id)}>
-                Deletar Post
-              </Btn>
-            </div>
-          );
-        })}
-      </div>
+      </form>   
+
+      <PostList posts={post} setPosts={setPost} />      
     </>
   );
 }
