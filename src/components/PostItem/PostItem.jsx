@@ -1,24 +1,42 @@
-
-import { PostContainer, ImageContainer, TextContainer, DeleteButton, Btn  } from "./StyledPostItem";
+import { useState } from "react";
+import Modal from "./Modal";
+import {
+  PostContainer,ImageContainer,TextContainer,DeleteButton,Button,
+} from "./StyledPostItem";
 
 export function PostItem({ post, onDelete }) {
-  /* const maxContentLength = 100; */ 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const ReadMore = () => {
+    setIsModalOpen(true);
+  };
 
   return (
     <PostContainer>
       <ImageContainer>
-        <img 
+        <img
           src={post.imageUrl || "https://encurtador.com.br/U27jc"}
-          alt={post.title} 
+          alt={post.title}
         />
       </ImageContainer>
       <TextContainer>
         <h2>{post.title}</h2>
         <p>
-          {post.description}
+          {post.description.length > 100
+            ? `${post.description.slice(0, 100)}...`
+            : post.description}
         </p>
-        <DeleteButton onClick={() => onDelete(post.id)}>Deletar</DeleteButton >
+        {post.description.length > 100 && (
+          <Button onClick={ReadMore}>Leia mais</Button>
+        )}
+        <DeleteButton onClick={() => onDelete(post.id)}>Deletar</DeleteButton>
       </TextContainer>
+      {isModalOpen && (
+        <Modal
+          description={post.description}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
     </PostContainer>
   );
 }
