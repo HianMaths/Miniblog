@@ -1,7 +1,9 @@
 # Miniblog com React
-<img src="imagem.png" alt="Exemplo imagem">
+<p>Aqui você conhecerá todas as etapas até a finalização do projeto 😀</p>
+<h1>Preview</h1>
+<img src="https://github.com/HianMaths/Miniblog/blob/main/src/assets/Preview.png" alt="Exemplo imagem">
 
-> O projeto é um miniblog simples desenvolvido em React, permitindo que usuários publiquem e excluam postagens. As postagens podem incluir título, conteúdo e uma imagem opcional. A interface é limpa e funcional, com foco na facilidade de uso.
+> O projeto é um miniblog simples que foi desenvolvido em React JS, permitindo que usuários publiquem e excluam postagens. As postagens podem incluir título, conteúdo e uma imagem opcional. A interface é limpa e funcional, com foco na facilidade de uso.
 
 ### Ajustes e melhorias
 
