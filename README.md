@@ -7,18 +7,17 @@
 
 ### Ajustes e melhorias
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
+Ckelist das etapas de desenvolvimento do projeto:
 
 - [x] Entrega dos Components: Header e Banner
 - [x] Entrega e estilização do Component: PostForm
 - [x] Entrega e estilização do Component: PostList
 - [x] Enterga e estilização do Component: PostItem
-- [ ] Ajustes de bugs e sintaxes incorretas do prejeto
-- [ ] Entrega final do projeto, totalmente funcional
+- [x] Ajustes de bugs e sintaxes incorretas do prejeto
+- [x] Entrega final do projeto, totalmente funcional
 
-## 🤝 Colaboradores
+### 🤝 Equipe de desenvolvimento do projeto acadêmico Miniblog:
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 <table>
   <tr>
