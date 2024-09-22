@@ -1,7 +1,11 @@
 import { useState } from "react";
 import Modal from "./Modal";
 import {
-  PostContainer,ImageContainer,TextContainer,DeleteButton,Button,
+  PostContainer,
+  ImageContainer,
+  TextContainer,
+  DeleteButton,
+  Button,
 } from "./StyledPostItem";
 
 export function PostItem({ post, onDelete }) {
@@ -29,7 +33,7 @@ export function PostItem({ post, onDelete }) {
         {post.description.length > 100 && (
           <Button onClick={ReadMore}>Leia mais</Button>
         )}
-        <DeleteButton onClick={() => onDelete(post.id)}>Deletar</DeleteButton>
+        <DeleteButton onClick={() => onDelete(post.id)}>Excluir</DeleteButton>
       </TextContainer>
       {isModalOpen && (
         <Modal

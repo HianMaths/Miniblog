@@ -1,6 +1,7 @@
-import React from 'react'
-import {ModalContainer, ModalContent, ButtonClose} from "./StyledPostItem"
+import React from "react";
+import { ModalContainer, ModalContent, ButtonClose } from "./StyledPostItem";
 
+// Função para o famoso "leia mais" quando não cabem mais caracteres na tela, no caso, a descrição do post
 export default function Modal({ description, onClose }) {
   return (
     <ModalContainer>
@@ -9,6 +10,5 @@ export default function Modal({ description, onClose }) {
         <ButtonClose onClick={onClose}>Fechar</ButtonClose>
       </ModalContent>
     </ModalContainer>
-  )
+  );
 }
-

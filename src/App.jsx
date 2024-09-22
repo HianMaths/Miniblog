@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <Banner imageUrl="https://steamuserimages-a.akamaihd.net/ugc/529517645743896441/AAF75DDC15D045162570BEB67291A2F4335E70ED/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" />
+      <Banner imageUrl="https://i.pinimg.com/originals/9c/ce/c4/9ccec4f5311e4925c9be8761549fa69b.gif" />
       <PostForm />
     </>
   );
